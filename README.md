@@ -2,7 +2,28 @@
 
 项目地址：https://github.com/SEU-CT-Recon/MCGPULite_v1.5?tab=readme-ov-file
 
-[TOC]
+- [MCGPULite_v1.5使⽤⼿册](#mcgpulite-v15----)
+  * [简介](#--)
+  * [代码的一些主要特点](#---------)
+  * [MCGPULite_v1.5 vs MCGPULite](#mcgpulite-v15-vs-mcgpulite)
+  * [MCGPULite_v1.5 vs VICTRE_MCGPU](#mcgpulite-v15-vs-victre-mcgpu)
+  * [MCGPULite 环境配置](#mcgpulite-----)
+  * [输⼊⽂件与参数](#-------)
+    + [输入文件准备](#------)
+      - [x-ray能谱⽂件](#x-ray----)
+      - [体素化几何模型文件](#---------)
+        * [材料文件](#----)
+    + [输入参数说明](#------)
+      - [1. 模拟配置 SIMULATION CONFIG](#1------simulation-config)
+      - [2. x射线源 SOURCE](#2-x----source)
+      - [3. 图像探测器 IMAGE DETECTOR](#3-------image-detector)
+      - [4. 扫描轨迹 SCAN TRAJECTORY](#4------scan-trajectory)
+      - [5. 模型文件 VOXELIZED GEOMETRY FILE](#5------voxelized-geometry-file)
+      - [6. 材料文件列表 MATERIAL FILE LIST](#6--------material-file-list)
+  * [运行](#--)
+  * [输出文件](#----)
+  * [已知的问题](#-----)
+    + [亮场模拟bug](#----bug)
 
 ## 简介
 
