@@ -22,10 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: List directory contents for debugging
-        run: ls -R
-        shell: bash
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -34,20 +30,19 @@ jobs:
       - name: Install Jekyll and Bundler
         run: |
           gem install bundler
+          cd ./MCGPULite_v1.5.github.io
           bundle install
-        working-directory: ./MCGPULite_v1.5.github.io
 
-      - name: List directory contents in the target directory for debugging
-        run: ls -R
-        working-directory: ./MCGPULite_v1.5.github.io
-        shell: bash
+      - name: List directory contents for debugging
+        run: ls -R ./MCGPULite_v1.5.github.io
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build --source ./MCGPULite_v1.5.github.io --destination ./_site
+          cd ./MCGPULite_v1.5.github.io
+          bundle exec jekyll build --source . --destination ../_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
