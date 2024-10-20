@@ -201,7 +201,7 @@ x 射线源定义为发射 x 射线的点源，其能量从⽤户提供的能谱
 
 关于能谱⽂件的产⽣，可以使⽤程序https://github.com/I-STAR/SPEKTR，在matlab中全部添加路径后运⾏spektr.m⽂件即可。
 
-![0]([.\assets](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/0.png)
+![0](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/0.png)
 
 在区域1更改参数可以形成不同的能谱（其他参数可⾃⾏探索），点击按钮Generate Spectrum产⽣能谱，点击按钮Save保存能谱⽂件为txt：
 
