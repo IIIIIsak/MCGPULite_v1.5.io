@@ -194,7 +194,7 @@ x 射线源定义为发射 x 射线的点源，其能量从⽤户提供的能谱
 
 经过修改后数据如下（仅展⽰头尾）:
 
-![2](.\assets\2.png)
+![2](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/2.png)
 
 
 
