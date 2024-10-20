@@ -205,7 +205,7 @@ x 射线源定义为发射 x 射线的点源，其能量从⽤户提供的能谱
 
 在区域1更改参数可以形成不同的能谱（其他参数可⾃⾏探索），点击按钮Generate Spectrum产⽣能谱，点击按钮Save保存能谱⽂件为txt：
 
-![1](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/1.png)
+![1](./assets/1.png)
 
 **根据MCGPULite的输⼊要求，需要做以下更改：**
 
@@ -215,11 +215,11 @@ x 射线源定义为发射 x 射线的点源，其能量从⽤户提供的能谱
 
 经过修改后数据如下（仅展⽰头尾）:
 
-![2](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/2.png)
+![2](./assets/2.png)
 
 
 
-![3](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/3.png)
+![3](./assets/3.png)
 
 #### 体素化几何模型文件
 
@@ -407,19 +407,19 @@ MC-GPU 使用基于 PENELOPE 数据库的材料属性数据库，已经提供了
 
 **在本程序中，坐标系原点并不是物体的中心，而是物体“包装盒”的后下角，即整体只处于第一象限内，如图所示:**
 
-![5](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/5.png)
+![5](./assets/5.png)
 
 **在设置其他参数时，需要以此坐标系特征为前提。**
 
 假设有一个大小为16\*16\*16cm的圆柱形水模，源初始方向为(0,1,0)，我们在已知SOURCE-TO-ROTATION AXIS DISTANCE（SOD）的情况下，如何设置射线源的初始位置才能使得旋转轴穿过模型的中心呢？
 
-![图片1](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/图片1.png)
+![图片1](./assets/图片1.png)
 
 如图，射线源的位置为($\frac x2,\frac y2 - SOD,\frac z2$)
 
 间隔120°得到的三张投影结果如下：
 
-![7](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/7.png)
+![7](./assets/7.png)
 
 #### 6. 材料文件列表 MATERIAL FILE LIST
 
@@ -483,11 +483,11 @@ source .bashrc
 
 MCGPULite_v1.5输出的每个raw文件里包含三张图，依次为：**Total(Primary+ Scatter), Primary, Scatter，即含散射的投影，不含散射的投影，散射图，** 单个文件导入imageJ中时注意设置Number of images为3。 MCGPU-for-MATLAB 可直接通过代码自行选择保存。
 
-![8](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/8.png)
+![8](./assets/8.png)
 
 除此外，MCGPULite_v1.5还会输出每张投影的模拟报告的二进制文件，只能通过**imageJ**打开，该报告包含了该张投影图的几何参数、光子到达探测器的平均概率、模拟的光子数、模拟时间等参数。
 
-![image-20241018144708511](https://github.com/IIIIIsak/MCGPULite_v1.5.io/blob/main/assets/9)
+![image-20241018144708511](./assets/9)
 
 ## 已知的问题
 
