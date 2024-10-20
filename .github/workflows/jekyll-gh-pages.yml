@@ -30,10 +30,11 @@ jobs:
       - name: Install Jekyll and Bundler
         run: |
           gem install bundler
+          cd ./MCGPULite_v1.5.github.io
           bundle install
 
       - name: List directory contents for debugging
-        run: ls -R
+        run: ls -R ./MCGPULite_v1.5.github.io
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
