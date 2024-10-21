@@ -68,6 +68,7 @@ MCGPULite_v1.5是https://github.com/DIDSR/VICTRE_MCGPU/的轻量版本，**只�
   ```diff
   #[SECTION SOURCE v.2016-12-02]
   ...
+  
   - 0.0300                 # SOURCE GAUSSIAN FOCAL SPOT FWHM [cm]
   - 0.18                   # 0.18 for DBT, 0 for FFDM [Mackenzie2017]  # ANGULAR BLUR DUE TO MOVEMENT ([exposure_time]*[angular_speed]) [degrees]
   - YES                     # COLLIMATE BEAM TOWARDS POSITIVE AZIMUTHAL (X) ANGLES ONLY? (ie, cone-beam center aligned with chest wall in mammography) [YES/NO]
