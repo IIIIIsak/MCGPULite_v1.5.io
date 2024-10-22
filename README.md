@@ -425,16 +425,12 @@ MC-GPU 使用基于 PENELOPE 数据库的材料属性数据库，已经提供了
 #### 6. 材料文件列表 MATERIAL FILE LIST
 
 ```makefile
-/home/kanshengqi/software/MCGPULite/material/air__5-120keV.mcgpu.gz                  density=0.0012   voxelId=0         #  1st MATERIAL FILE (.gz accepted)
-/home/kanshengqi/software/MCGPULite/material/water__5-120keV.mcgpu.gz              density=1    voxelId=1                #  2nd MATERIAL FILE
-/home/kanshengqi/software/MCGPULite/material/adipose__5-120keV.mcgpu               density=0.920    voxelId=5,10    #  3rd MATERIAL FILE
-/home/kanshengqi/software/MCGPULite/material/blood__5-120keV.mcgpu                                                                         #  4th MATERIAL FILE
+/home/kanshengqi/software/MCGPULite/material/air__5-120keV.mcgpu.gz                         #  1st MATERIAL FILE (.gz accepted)
+/home/kanshengqi/software/MCGPULite/material/water__5-120keV.mcgpu.gz                             #  2nd MATERIAL FILE
 ```
 
 - ！！注意：***目前如果用带header的`.vox`*文件，也就是老方法的vox文件，自定义编号和密度是不适用的**
-- 旧版本代码使用了硬编码的转换表，将材料分配给特定的体素ID号，并为每种材料设定了固定的密度。该代码已升级，允许用户为输入文件中列出的每种材料选择密度和体素ID。
-- 在每个材料文件名后添加关键字`density=`和所需的材料密度（如果未给出密度，则使用材料文件中默认材料密度）。
-- 可以使用关键字`voxelID=`提供以逗号分隔的体素ID号列表。输入几何体中具有给定ID的体素将被分配给相应的材料。请参见输入文件“MC-GPULite_v1.5_sample.in”以获取示例。如果未输入密度和体素ID，软件将自动使用默认密度和编号。新代码与旧输入文件100%兼容，且更改对模拟结果没有影响。
+- 代码使用了硬编码的转换表，将材料分配给特定的体素ID号，并为每种材料设定了固定的密度。
 
 ## 运行
 
